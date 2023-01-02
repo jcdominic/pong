@@ -2,6 +2,8 @@
 <html>
 
 <style>
+  @import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
   #gameCanvas {
     border: none;
     background-color: black;
@@ -18,11 +20,25 @@
   }
 
   button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'ArcadeClassic', sans-serif;
     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
     padding: 16px 32px;
     font-size: 18px;
+  }
+
+  #homeButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    border: none;
+    background-color: #1E90FF;
+    color: white;
+    font-size: 16px;
+    font-family: 'ArcadeClassic', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
   }
 
   body {
@@ -30,6 +46,8 @@
     background-size: contain;
   }
 </style>
+
+<a href="https://jcdominic.github.io/" id="homeButton">Back to Homepage</a>
 
 <div id="buttonContainer">
   <button id="startButton">Start Game</button>
