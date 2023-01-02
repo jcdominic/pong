@@ -107,8 +107,6 @@ startButton.addEventListener('click', startGame);
 const pauseButton = document.getElementById('pauseButton');
 pauseButton.addEventListener('click', pauseGame);
 
-// const mouse = document.canvas.getElementById('mousedown');
-// canvas.addEventListener('mousedown', handleMouseClick);
 
 function ballReset() {
 if(player1Score >= WINNING_SCORE ||
@@ -124,9 +122,9 @@ if(player1Score >= WINNING_SCORE ||
 function computerMovement() {
   var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
   if(paddle2YCenter < ballY-37) {
-    paddle2Y += 20;
+    paddle2Y += 10;
   } else if (paddle2YCenter > ballY+37) {
-    paddle2Y -= 20;
+    paddle2Y -= 10;
   }
 }
 
